@@ -10,7 +10,9 @@ interface HeaderProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Header: React.FC<HeaderProps> = async ({ type = "default" }) => {
   const session = await auth();
+  console.log(session);
   const user = !!session?.user;
+  console.log(user);
 
   return (
     <header className={`header ${type}Type`}>
