@@ -140,7 +140,7 @@ const PassengersModal = ({
             <p>만 12세 미만</p>
             <div className="counter">
               <button
-                className="counter-button img-box"
+                className="counter-button img-box minus"
                 type="button"
                 id="children"
                 onClick={() => {
